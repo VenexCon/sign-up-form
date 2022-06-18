@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="#">
+  <link rel="stylesheet" href="dist/style.css">
+  <script src="https://kit.fontawesome.com/a587b37b46.js" crossorigin="anonymous" defer></script>
   <script src ="#" defer></script>
   <title>Ski-form</title>
 </head>
@@ -15,9 +16,10 @@
     
     <!--ImageDiv -->
     <div class="image-div">
+      <img src="dist/images/background.jpg" alt="mountain picture">
       <div class="banner">
         <div class="logo">
-          logo here
+          <i class="fa-solid fa-person-skiing fa-4x"></i>
         </div>
       </div>
     </div>
@@ -25,8 +27,60 @@
     
     <!--Content Div -->
     <div class="content">
-      <div class="brief">Brief one</div>
-      <form action="#" method ="post"></form>
+      <div class="brief">
+        <h3>This is not a real sign-up service</h3>
+        <br>
+        <p>This is not a real form and ofcourse we would never expect some simple jerries such as 
+            yourselves to sign-up to send it down the mountain above, or to the left if your on a desktop! </p>
+            <br>
+            <p>Even though you probably would if we told you too.</p>
+      </div>
+      <div class="form_title"><h4>Sign-up to Send It!</h4></div>
+      <form action="#" method ="post">
+        <div class="formGroup">
+        <label for="first_name">First Name
+        <input type="text" name="first_name" id="first_name" required>
+        </label>
+        </div>
+
+        <div class="formGroup">
+        <label for="Last_name">Last Name 
+        <input type="text" name="last_name" id="last_name" required>
+        </label>
+        </div>
+
+        <div class="formGroup">
+        <label for="email">Email
+        <input type="email" name="email" id="email"  required>
+        </label>
+        </div>
+
+        <div class="formGroup">
+        <label for="phone_number">Phone Number
+        <input type="tel" name="phone_number" id="phone_number" pattern="[0-9]{11}" 
+          placeholder="+44"  required>
+        </label>
+        </div> 
+
+        <div class="formGroup">
+        <label for="password">Password
+        <input type="password" name="password" id="password"  required>
+        </label>
+        </div>
+
+        <div class="formGroup">
+        <label for="password_confirmation">Confirm Password
+        <input type="password" name="password_confirmation" id="password_confirmation"  required>
+        </label>
+        </div>
+
+        <div class="btnContainer">
+        <button class="submit">Register Interest</button>
+        </div>
+      </form>
+      
+      
+      <div class="lowerBrief"><b>Click here to</b> <a href="#">login</a></div>
     </div>
   
   
