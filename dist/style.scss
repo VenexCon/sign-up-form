@@ -82,26 +82,37 @@ form {
   flex-wrap: wrap;
   flex-flow: row wrap;
   box-shadow: 0px 2px 2px black;
-  background-color: $backgroundColor;
+  background-color: #DCDCDC;
   gap: 10%;
   
 
-    .formGroup {
+    .formGroup 
+    {
       padding: 1rem;
       width: 33%;
+      min-width: fit-content;
       margin: 1rem;
-      border: solid 2px black;
     }
 
     label {
       display: block;
       padding: 1rem;
-      border: solid 2px rgb(221, 4, 4);
+      
 
     }
 
     input {
       display: block;
+      border-radius: 0.15rem;
+    }
+
+    input:focus {
+      border: solid 2px blue;
+      transition: 0.5s;
+    }
+
+    input:valid {
+      border: solid 2px green;
     }
 
     .btnContainer {
@@ -111,7 +122,7 @@ form {
 
     button {
       margin-left: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       padding:0.5rem;
       border-radius: 0.5rem;
       background-color: orangered;
@@ -167,10 +178,6 @@ form {
   .form {
     flex-direction: column;
     align-items: stretch;
-  }
-
-  .formGroup{
-   min-width: 100%;
   }
 
 };
